@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class UnionFindClient {
+public class QuickFindClient {
 
 	public static void main(String[] args) {
 
@@ -12,15 +12,15 @@ public class UnionFindClient {
 		try {
 			stdIn = new Scanner(new File("QuickFindInput.txt"));
 			int N = stdIn.nextInt();
-			UF uf = new UF(N);
+			QuickFindUF quf = new QuickFindUF(N);
 			
 			while(!stdIn.hasNext())
 			{
 				int p = stdIn.nextInt();
 				int q = stdIn.nextInt();
-				if(!uf.connected(p, q))
+				if(!quf.connected(p, q))
 				{
-					uf.union(p, q);
+					quf.union(p, q);
 					System.out.println(p + " " + q + " are now connected");
 				}
 				else
