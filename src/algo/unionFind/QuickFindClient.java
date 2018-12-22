@@ -14,7 +14,7 @@ public class QuickFindClient {
 			int N = stdIn.nextInt();
 			QuickFindUF quf = new QuickFindUF(N);
 			
-			while(!stdIn.hasNext())
+			while(stdIn.hasNextInt())
 			{
 				int p = stdIn.nextInt();
 				int q = stdIn.nextInt();
