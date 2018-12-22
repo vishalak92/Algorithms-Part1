@@ -1,3 +1,4 @@
+package algo.unionFind;
 
 public class UF {
 

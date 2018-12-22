@@ -1,5 +1,6 @@
+package algo.unionFind;
 
-public class TestMain {
+public class UnionFindClient {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
