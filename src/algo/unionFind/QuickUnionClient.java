@@ -20,7 +20,11 @@ public class QuickUnionClient {
 				int q = stdIn.nextInt();
 				if(!quf.connected(p, q))
 				{
-					quf.union(p, q);
+					//Uncomment the line below to Run the Quick Union without weighting 
+					//quf.union(p, q);
+					//Running the Weighted Quick Union
+					quf.unionWeighted(p, q); 
+					
 					System.out.println(p + " " + q + " are now connected");
 				}
 				else
